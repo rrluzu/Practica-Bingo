@@ -24,7 +24,16 @@
 </head>
 <body>
     <header>
-        <h1 class="text-center p-3 bg-custom mx-2 text-white" style="font-size: 40pt;">BINGO</h1>
+        <div class="container-fluid bg-custom">
+            <div class="row d-fluid">
+                <div class="col-7">
+                    <h1 class="text-end p-3 mx-2 text-white" style="font-size: 40pt;">BINGO</h1>
+                </div>
+                <div class="col-5 d-grid align-items-center justify-content-end text-end px-5">
+                    <p id="hora" class="text-white" style="font-weight: bold;"></p>
+                </div>
+            </div>
+        </div>
     </header>
     <body>
         <div class="container mt-5">
@@ -34,7 +43,6 @@
                 </div>
                 <div class="col-6">
 
-                    <p id="hora"></p>
 
                     <table class="table table-custom">
                         <tr style="width: fit-content;">
@@ -96,10 +104,12 @@
         
         let horaReloj = new Date();
 
-        let print = mostrarHora(horaReloj);
+        let print = generarHora(horaReloj);
 
+        setTimeout("generarHora(horaReloj)", 10000);
 
         document.getElementById("hora").innerHTML = print;
+        
     </script>
 </body>
 </html>
