@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Personajes</title>
+</head>
+<body>
+  <h1>Formulario para crear personajes</h1>
+
+  <!-- Formulario para ingresar los datos del personaje -->
+  <form id="form-personaje">
+    <label for="nombre">Nombre del personaje:</label>
+    <input type="text" id="nombre" required><br><br>
+
+    <label for="edad">Edad del personaje:</label>
+    <input type="number" id="edad" required><br><br>
+
+    <button type="submit">Crear Personaje</button>
+  </form>
+
+  <h2>Personajes creados:</h2>
+  <ul id="lista-personajes"></ul>
+
+  <script>
+    // Array para almacenar los personajes
+    let personajes = [];
+
+    // Obtener el formulario y la lista de personajes
+    const form = document.getElementById('form-personaje');
+    const listaPersonajes = document.getElementById('lista-personajes');
+
+    // Función para manejar la creación de un personaje
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Evitar el envío del formulario
+
+      // Obtener los valores de los inputs
+      const nombre = document.getElementById('nombre').value;
+      const edad = document.getElementById('edad').value;
+
+      // Crear un objeto personaje
+      const personaje = {
+        nombre: nombre,
+        edad: Number(edad) // Asegurarse de que la edad sea un número
+      };
+
+      // Agregar el personaje al array
+      personajes.push(personaje);
+
+      // Actualizar la lista visualmente
+      actualizarLista();
+
+      // Limpiar los campos del formulario
+      form.reset();
+    });
+
+    // Función para mostrar los personajes en la página
+    function actualizarLista() {
+      // Limpiar la lista antes de volver a llenarla
+      listaPersonajes.innerHTML = '';
+
+      // Crear un elemento de lista <li> para cada personaje
+      personajes.forEach(personaje => {
+        const li = document.createElement('li');
+        li.textContent = `Nombre: ${personaje.nombre}, Edad: ${personaje.edad}`;
+        listaPersonajes.appendChild(li);
+      });
+    }
+
+
+    function Alumno(nombre, apellido){
+    this.nombre = nombre;
+    this.apellido = apellido;
+}
+
+const alumno1 = new Alumno("Julio", "Mondéjar");
+const alumno2 = new Alumno("Uriel", "López");
+const alumno3 = new Alumno("Fath Allah", "Echajri");
+const alumno4 = new Alumno("Iván", "Sabater");
+const alumno5 = new Alumno("Alberto", "Castaño");
+const alumno6 = new Alumno("Iván", "Gil");
+const alumno7 = new Alumno("Mehdi", "Laaouinate");
+const alumno8 = new Alumno("José", "Gil");
+const alumno9 = new Alumno("David", "Corbalán");
+const alumno10 = new Alumno("María", "Bravo");
+const alumno11 = new Alumno("Jaime", "Rubio");
+const alumno12 = new Alumno("Alejandro", "Vascónez");
+const alumno13 = new Alumno("Jesús", "Carrasco");
+const alumno14 = new Alumno("Álvaro", "Martínez");
+const alumno15 = new Alumno("Francisco", "López");
+const alumno16 = new Alumno("Uriel", "Martínez");
+const alumno17 = new Alumno("Jesús", "Pérez");
+const alumno18 = new Alumno("Jalil", "Tahri");
+const alumno19 = new Alumno("José", "Peñalver");
+const alumno20 = new Alumno("Adam", "El Nabaoui");
+const alumno21 = new Alumno("Marlon", "Cotto");
+const alumno22 = new Alumno("Adrián", "Vicente");
+const alumno23 = new Alumno("Eduardo", "Piquer");
+const alumno24 = new Alumno("Mario", "Martínez");
+const alumno25 = new Alumno("Erikas", "Pilipavicius");
+const alumno26 = new Alumno("Rafael", "Lizán");
+const alumno27 = new Alumno("Angel", "Guerra");
+const alumno28 = new Alumno("Hamza", "Daoudi");
+
+  </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Personajes</title>
+</head>
+<body>
+  <h1>Formulario para crear personajes</h1>
+
+  <!-- Formulario para ingresar los datos del personaje -->
+  <form id="form-personaje">
+    <label for="nombre">Nombre del personaje:</label>
+    <input type="text" id="nombre" required><br><br>
+
+    <label for="edad">Edad del personaje:</label>
+    <input type="number" id="edad" required><br><br>
+
+    <button type="submit">Crear Personaje</button>
+  </form>
+
+  <h2>Personajes creados:</h2>
+  <ul id="lista-personajes"></ul>
+
+  <script>
+    // Array para almacenar los personajes
+    let personajes = [];
+
+    // Obtener el formulario y la lista de personajes
+    const form = document.getElementById('form-personaje');
+    const listaPersonajes = document.getElementById('lista-personajes');
+
+    // Función para manejar la creación de un personaje
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Evitar el envío del formulario
+
+      // Obtener los valores de los inputs
+      const nombre = document.getElementById('nombre').value;
+      const edad = document.getElementById('edad').value;
+
+      // Crear un objeto personaje
+      const personaje = {
+        nombre: nombre,
+        edad: Number(edad) // Asegurarse de que la edad sea un número
+      };
+
+      // Agregar el personaje al array
+      personajes.push(personaje);
+
+      // Actualizar la lista visualmente
+      actualizarLista();
+
+      // Limpiar los campos del formulario
+      form.reset();
+    });
+
+    // Función para mostrar los personajes en la página
+    function actualizarLista() {
+      // Limpiar la lista antes de volver a llenarla
+      listaPersonajes.innerHTML = '';
+
+      // Crear un elemento de lista <li> para cada personaje
+      personajes.forEach(personaje => {
+        const li = document.createElement('li');
+        li.textContent = `Nombre: ${personaje.nombre}, Edad: ${personaje.edad}`;
+        listaPersonajes.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>

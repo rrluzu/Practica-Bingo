@@ -20,16 +20,15 @@
         }
     
         /* Botón estilizado */
-        .btn-custom {
+        .btn-custom, .text-custom{
             background: linear-gradient(90deg, #ff7eb3, #ff758c);
             color: white;
-            font-size: 2.5rem; /* Tamaño de fuente más grande */
+            font-size: 1.5rem; /* Tamaño de fuente más grande */
             font-weight: bold;
             border: none;
             padding: 20px 40px; /* Más espacio dentro del botón */
             border-radius: 50px;
             transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Añadir un sombreado */
         }
@@ -40,7 +39,6 @@
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombreado más intenso */
         }
 
-    
         /* Tabla personalizada */
         .table-custom {
             width: 100%;
@@ -80,26 +78,21 @@
         }
 
         /* Estilo para el botón de borrar */
-.btn-borrar {
-    background-color: #ff4d4d; /* Color de fondo rojo */
-    color: white; /* Color del texto */
-    font-size: 1rem; /* Tamaño de la fuente */
-    padding: 8px 16px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    transition: background-color 0.3s, transform 0.2s; /* Transiciones para efectos suaves */
-}
+        .btn-borrar {
+            background-color: #ff4d4d; /* Color de fondo rojo */
+            color: white; /* Color del texto */
+            font-size: 1rem; /* Tamaño de la fuente */
+            padding: 8px 16px; /* Espaciado interno */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombreado más intenso */
+            transition: background-color 0.3s, transform 0.2s; /* Transiciones para efectos suaves */
+        }
 
-.btn-borrar:hover {
-    background-color: #ff1a1a; /* Color de fondo más oscuro al pasar el ratón */
-    transform: scale(1.1); /* Aumentar ligeramente el tamaño del botón */
-}
-
-.btn-borrar:focus {
-    outline: none; /* Elimina el contorno al hacer clic */
-    box-shadow: 0 0 5px rgba(255, 77, 77, 0.7); /* Sombra de enfoque */
-}
+        .btn-borrar:hover {
+            transform: scale(1.1); /* Aumentar ligeramente el tamaño del botón */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombreado más intenso */
+        }
 
     </style>
     
@@ -121,8 +114,14 @@
     <body>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-6 d-grid align-items-start">
-                    <button class="btn-custom">GIRAR</button>
+                <div class="col-6">
+                    <form id="form-personaje">
+                        <p class="text-white text-custom" style="font-weight: bold; box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);">Datos del alumno (Nombre y apellido):</p>
+                        <input type="text" id="nombre" class="form-control form-control-lg" style="box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);" required><br><br>
+                        <button type="submit" class="btn-custom">Agregar Alumno</button>
+                    </form>
+                    
+                    <button class="btn-custom mt-3">Empezar</button>
                 </div>
                 <div class="col-6">
                     <table class="table table-custom">

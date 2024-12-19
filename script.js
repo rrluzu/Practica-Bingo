@@ -29,46 +29,15 @@ actualizarReloj();
 
 //APARTADO DE LOS ALUMNOS
 
-function Alumno(nombre, apellido){
-    this.nombre = nombre;
-    this.apellido = apellido;
-}
-
-const alumno1 = new Alumno("Julio", "Mondéjar");
-const alumno2 = new Alumno("Uriel", "López");
-const alumno3 = new Alumno("Fath Allah", "Echajri");
-const alumno4 = new Alumno("Iván", "Sabater");
-const alumno5 = new Alumno("Alberto", "Castaño");
-const alumno6 = new Alumno("Iván", "Gil");
-const alumno7 = new Alumno("Mehdi", "Laaouinate");
-const alumno8 = new Alumno("José", "Gil");
-const alumno9 = new Alumno("David", "Corbalán");
-const alumno10 = new Alumno("María", "Bravo");
-const alumno11 = new Alumno("Jaime", "Rubio");
-const alumno12 = new Alumno("Alejandro", "Vascónez");
-const alumno13 = new Alumno("Jesús", "Carrasco");
-const alumno14 = new Alumno("Álvaro", "Martínez");
-const alumno15 = new Alumno("Francisco", "López");
-const alumno16 = new Alumno("Uriel", "Martínez");
-const alumno17 = new Alumno("Jesús", "Pérez");
-const alumno18 = new Alumno("Jalil", "Tahri");
-const alumno19 = new Alumno("José", "Peñalver");
-const alumno20 = new Alumno("Adam", "El Nabaoui");
-const alumno21 = new Alumno("Marlon", "Cotto");
-const alumno22 = new Alumno("Adrián", "Vicente");
-const alumno23 = new Alumno("Eduardo", "Piquer");
-const alumno24 = new Alumno("Mario", "Martínez");
-const alumno25 = new Alumno("Erikas", "Pilipavicius");
-const alumno26 = new Alumno("Rafael", "Lizán");
-const alumno27 = new Alumno("Angel", "Guerra");
-const alumno28 = new Alumno("Hamza", "Daoudi");
-
 // Array de alumnos
-const alumnos = [
-    alumno1, alumno2, alumno3, alumno4, alumno5, alumno6, alumno7, alumno8, alumno9, alumno10,
-    alumno11, alumno12, alumno13, alumno14, alumno15, alumno16, alumno17, alumno18, alumno19, alumno20,
-    alumno21, alumno22, alumno23, alumno24, alumno25, alumno26, alumno27, alumno28
-];
+let alumnos = [];
+
+function agregarAlumno(){
+    let nombre = document.getElementById("nombre").value;
+
+    
+
+}
 
 // Obtener referencia al tbody
 const tablaAlumnos = document.getElementById('tablaAlumnos');
